@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://media.istockphoto.com/id/1215863523/vector/music-themed-background-with-arabic-instruments.jpg?s=612x612&w=0&k=20&c=-QEd_jzib27GJzcQ3wMqCdwhBH1IKoM99DrwBrldi3k=);
+    background-size: cover;
+  }
+  
+  header {
+    background-color: #661d1d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    height: 85px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+
+  }
+  nav a {
+    color: #661d1d;
+    text-decoration: none;
+    padding: 5px;
+  }
+  section {
+    padding: 30px;
+    text-align: center;
+    flex-direction: column;
+
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+    flex: 0 0 calc(33.33% - 20px);
+
+  }
+  
+  img {
+    max-width: 100%;
+    height: 450px;;
+    margin-bottom: 10px;
+  }
+  
+  audio {
+    margin-top: 5px;
+  }
+  .instrument a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #880505;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+
+
+  }
+  
+  .instrument a:hover {
+    background-color: #000000;
+
+  }
+  .instrument-frame {
+    width: 25%; /* Adjust the width as needed */
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    padding: 10px; /* Add padding for spacing between frames */
+    flex-direction: rows;
+
+  }
+  
+  
+  
+  .instrument {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #c6c1c1;
+    border-radius: 4px;
+    height: 100%; /* Make each frame occupy the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space the elements vertically */
+  }
+  
+  .instrument img {
+    max-width: auto;
+    height: 20%;
+    margin-bottom: 10px;
+  }
+  
+  .instrument h3,
+  .instrument p {
+    margin: 0; /* Remove default margin for better alignment */
+  }
+  
+.artist-frame{
+    width: 25%; /* Adjust the width as needed */
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    padding: 10px; /* Add padding for spacing between frames */
+    flex-direction: rows;
+    
+}
+.artists{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #c6c1c1;
+    border-radius: 4px;
+    height: 100%; /* Make each frame occupy the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space the elements vertically */
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+    background-color: transparent;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  .footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .footer-nav a {
+    color: #661d1d;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    /* Adjustments for mobile devices */
+    header{
+        width: auto;
+    }
+    
+    nav {
+      height: auto;
+      width: auto;
+    }
+    
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+    
+    .item {
+      flex: 0 0 calc(50% - 20px);
+    }
+    
+    img {
+      height: 250px;
+    }
+    
+    .instrument a {
+      width: 40%;
+    }
+    
+    .instrument-frame,
+    .artist-frame {
+      width: 50%;
+    }
+  }
