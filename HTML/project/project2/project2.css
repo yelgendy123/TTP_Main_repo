@@ -1,0 +1,101 @@
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    z-index: -1;
+  }
+  header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    animation: text-animation 2s infinite alternate; 
+
+  }
+  @keyframes text-animation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  #message {
+    color: white;
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    /*animation: text-animation 2s infinite alternate;*/
+}
+input[type="number"] {
+    padding: 15px;
+    margin: 10px auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px 4px;
+    flex: 0 0 calc(50% - 10px);
+    justify-content: center;
+
+
+}
+
+.item button {
+    margin: 2px;
+    align-items: center;
+}
+  button {
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    width: 150px;
+    background-color: #020f1d;
+    color: #fff;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #375f8a;
+}
+#score, #highscore, #correct-number {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 24px;
+    animation: text-animation 2s infinite alternate;
+
+}
+#guess1, #guess2, #guess3{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 24px;
+    animation: text-animation 2s infinite alternate;
+
+
+}
+.guess-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px 4px;
+    flex: 0 0 calc(50% - 10px);
+    justify-content: center;
+
+}

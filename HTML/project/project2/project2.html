@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="project2.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <script src="C:\Users\Youssef Elgendy\Desktop\ttpHTml\HTML\project\project2\project2.js"></script>
+
+
+</head>
+<body>
+    <div id="video-container">
+        <video src="Untitled design.mp4" autoplay loop></video>
+    </div>
+    <header>
+        Guess The Number
+    </header>
+    <div id="game-container">
+        <p id="message">Guess a number between 1 and 100!</p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" min="1" max="100">
+        <div class="item">
+            <button id="submit-btn">Submit</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        <p id="score">Score: <span id="score-value">10</span></p>
+        <p id="highscore">Highscore: <span id="highscore-value">0</span></p>
+        <p id="correct-number">The correct number was: <span id="random-number"></span></p>
+        <div class="guess-item">
+            <p id="guess1">Guess 1: <span id="guess1-value"></span></p>
+            <p id="guess2">Guess 2: <span id="guess2-value"></span></p>
+            <p id="guess3">Guess 3: <span id="guess3-value"></span></p>
+        </div>
+    </div>
+</body>
+</html>
