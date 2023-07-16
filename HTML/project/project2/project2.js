@@ -4,6 +4,7 @@ let highscore = 0;
 let guess1ValueElement = document.getElementById("guess1-value");
 let guess2ValueElement = document.getElementById("guess2-value");
 let guess3ValueElement = document.getElementById("guess3-value");
+console.log('hi');
 
 function changeMsg(msg) {
     document.getElementById("message").textContent = msg;
@@ -11,6 +12,8 @@ function changeMsg(msg) {
 
 function checkGuess() {
     const userInput = parseInt(document.getElementById("guess-input").value);
+    console.log(userInput);
+    console.log(typeof userInput);
 
     if (isNaN(userInput) || userInput < 1 || userInput > 100) {
         changeMsg("Please enter a valid number");
